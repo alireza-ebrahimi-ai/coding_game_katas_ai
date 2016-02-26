@@ -39,4 +39,4 @@ def next_version(version):
                next_version_id += '.'
         return next_version_id
 
-print next_version("9.9")
+print next_version("1.9.8.7.3.9.9.9.9")
