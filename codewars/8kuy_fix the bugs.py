@@ -3,7 +3,3 @@ def my_first_kata(a, b):
         return False
     else:
         return a % b + b % a
-
-print my_first_kata(5, 4)
-
-
