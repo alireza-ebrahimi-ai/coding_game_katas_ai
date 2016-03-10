@@ -1,9 +1,9 @@
-def my_first_kata(a, b):
-    if not isinstance(a, int) or not isinstance(b, int):
-        return False
-    else:
-        return a % b + b % a
+import re
 
-print my_first_kata(5, 4)
+def rad_ladies(name):
+    s_tuple = re.findall(r'[a-zA-Z! ]', name)
+    answer =''
+    for i in range(len(s_tuple)):
+        answer = answer + s_tuple[i]
 
-
+    return answer.upper()
