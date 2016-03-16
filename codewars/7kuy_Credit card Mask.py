@@ -4,4 +4,4 @@ def maskify(cc):
     else:
         return cc
 
-print(maskify('SF$SDfgsd2eA'))
+print maskify('SF$SDfgsd2eA')
