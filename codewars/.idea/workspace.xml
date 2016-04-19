@@ -25,21 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rna_to_protein_sequence_translation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py">
+      <file leaf-file-name="matrix_determinatant.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kuy4/matrix_determinatant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_rna_to_protein_sequence_translation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_rna_to_protein_sequence_translation.py">
+      <file leaf-file-name="test_matrix_determinant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_matrix_determinant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,6 +78,8 @@
         <option value="$PROJECT_DIR$/src/kuy6/dna_sequence_tester.py" />
         <option value="$PROJECT_DIR$/tests/test_rna_to_protein_sequence_translation.py" />
         <option value="$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py" />
+        <option value="$PROJECT_DIR$/tests/test_matrix_determinant.py" />
+        <option value="$PROJECT_DIR$/src/kuy4/matrix_determinatant.py" />
       </list>
     </option>
   </component>
@@ -117,6 +119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,18 +181,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kuy6" />
+              <option name="myItemId" value="kuy4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_rna_to_protein_sequence_translation.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/test_matrix_determinant.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -202,7 +204,7 @@
       <recent name="D:\_Pg\_Katas_solutions_python\codewars" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.test_rna_to_protein_sequence_translation">
+  <component name="RunManager" selected="Python tests.test_matrix_determinant">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -343,7 +345,7 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_rna_to_protein_sequence_translation" type="tests" factoryName="py.test">
+    <configuration default="false" name="test_matrix_determinant" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -361,7 +363,7 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="D:\_Pg\_Katas_solutions_python\codewars\tests\test_rna_to_protein_sequence_translation.py" />
+      <option name="testToRun" value="D:\_Pg\_Katas_solutions_python\codewars\tests\test_matrix_determinant.py" />
       <option name="keywords" value="" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
@@ -369,7 +371,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.test_rna_to_protein_sequence_translation" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.test_matrix_determinant" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -389,39 +391,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_dna_sequence_tester - 2016.04.14 at 15h 11m 27s.xml">
-      <configuration name="test_dna_sequence_tester" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 49m 48s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_dna_sequence_tester - 2016.04.14 at 15h 12m 22s.xml">
-      <configuration name="test_dna_sequence_tester" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 53m 48s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_dna_sequence_tester - 2016.04.14 at 15h 39m 17s.xml">
-      <configuration name="test_dna_sequence_tester" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 55m 18s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 40m 30s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 56m 18s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 46m 55s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 56m 54s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 47m 09s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 57m 38s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 52m 09s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 57m 56s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 53m 18s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 14h 58m 37s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 54m 18s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 15h 04m 50s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_rna_to_protein_sequence_translation - 2016.04.14 at 15h 56m 24s.xml">
-      <configuration name="test_rna_to_protein_sequence_translation" configurationId="tests" />
+    <history-entry file="test_matrix_determinant - 2016.04.19 at 15h 05m 03s.xml">
+      <configuration name="test_matrix_determinant" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -467,11 +469,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kuy6/dna_sequence_tester.py">
+    <entry file="file://$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_rna_to_protein_sequence_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_rna_to_protein_sequence_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kuy6/dna_sequence_tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -479,9 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,9 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -682,9 +705,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -696,10 +724,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kuy6/rna_to_protein_sequence_translation.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_matrix_determinant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kuy4/matrix_determinatant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
