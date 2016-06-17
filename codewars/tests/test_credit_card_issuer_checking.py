@@ -1,4 +1,4 @@
-from src.kuy7.credit_card_issuer_checking import get_issuer
+from codewars.src.kuy7.credit_card_issuer_checking import get_issuer
 
 
 def test_zero():
