@@ -24,8 +24,8 @@
       <file leaf-file-name="02_simple_array_sum.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,8 +53,8 @@
         <option value="$PROJECT_DIR$/codewars/tests/test_credit_card_issuer_checking.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/00_hello_world.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py" />
       </list>
     </option>
   </component>
@@ -143,38 +143,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codewars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codewars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -191,24 +159,7 @@
       <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.00_hello_world">
-    <configuration default="false" name="123" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codewars" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codewars/123.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.02_simple_array_sum">
     <configuration default="false" name="123 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,6 +240,23 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="02_simple_array_sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -426,19 +394,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.123" />
-      <item index="1" class="java.lang.String" itemvalue="Python.123 (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.00_hello_world" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_dna_sequence_tester.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_Mastercard" />
+      <item index="0" class="java.lang.String" itemvalue="Python.123 (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.00_hello_world" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_dna_sequence_tester.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_Mastercard" />
+      <item index="4" class="java.lang.String" itemvalue="Python.02_simple_array_sum" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.00_hello_world" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_Mastercard" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_dna_sequence_tester.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.123 (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.123" />
+        <item index="0" class="java.lang.String" itemvalue="Python.02_simple_array_sum" />
+        <item index="1" class="java.lang.String" itemvalue="Python.00_hello_world" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_Mastercard" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_dna_sequence_tester.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python.123 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -518,7 +486,7 @@
         <state relative-caret-position="170">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -621,7 +589,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -668,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
