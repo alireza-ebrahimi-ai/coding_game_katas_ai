@@ -21,11 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="02_simple_array_sum.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py">
+      <file leaf-file-name="03_a_very_big_sum.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/03_a_very_big_sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04_diagonal_difference.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,6 +65,8 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/03_a_very_big_sum.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
       </list>
     </option>
   </component>
@@ -636,8 +648,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/03_a_very_big_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
