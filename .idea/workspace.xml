@@ -24,8 +24,8 @@
       <file leaf-file-name="06_staircase.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,8 +64,8 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/04_class_vs_instance.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05 plus minus.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05_plus_minus.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
       </list>
     </option>
   </component>
@@ -170,24 +170,7 @@
       <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.05 plus minus">
-    <configuration default="false" name="02_operators" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/02_operators.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.06_staircase">
     <configuration default="false" name="03_intro_t-_conditional_statements" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,6 +235,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
       <option name="SCRIPT_NAME" value="F:\_code_git\Katas_solutions_python\hacker_rank\Algorithms\warmup\05_plus_minus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="06_staircase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -391,19 +391,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.02_operators" />
-      <item index="1" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
-      <item index="2" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-      <item index="3" class="java.lang.String" itemvalue="Python.points on a line" />
-      <item index="4" class="java.lang.String" itemvalue="Python.05 plus minus" />
+      <item index="0" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
+      <item index="1" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
+      <item index="2" class="java.lang.String" itemvalue="Python.points on a line" />
+      <item index="3" class="java.lang.String" itemvalue="Python.05 plus minus" />
+      <item index="4" class="java.lang.String" itemvalue="Python.06_staircase" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.05 plus minus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-        <item index="2" class="java.lang.String" itemvalue="Python.points on a line" />
-        <item index="3" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
-        <item index="4" class="java.lang.String" itemvalue="Python.02_operators" />
+        <item index="0" class="java.lang.String" itemvalue="Python.06_staircase" />
+        <item index="1" class="java.lang.String" itemvalue="Python.05 plus minus" />
+        <item index="2" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
+        <item index="3" class="java.lang.String" itemvalue="Python.points on a line" />
+        <item index="4" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
       </list>
     </recent_temporary>
   </component>
@@ -662,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
