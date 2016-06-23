@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="06_staircase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py">
+      <file leaf-file-name="07_time_conversion.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,6 +66,7 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05 plus minus.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05_plus_minus.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py" />
       </list>
     </option>
   </component>
@@ -170,24 +171,7 @@
       <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.06_staircase">
-    <configuration default="false" name="03_intro_t-_conditional_statements" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="F:\_code_git\Katas_solutions_python\hacker_rank\30_days_of_code_challenges\src\03_intro_in_conditional_statements.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.07_time_conversion">
     <configuration default="false" name="04_diagonal_difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,6 +236,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="07_time_conversion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -391,19 +392,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
-      <item index="1" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-      <item index="2" class="java.lang.String" itemvalue="Python.points on a line" />
-      <item index="3" class="java.lang.String" itemvalue="Python.05 plus minus" />
-      <item index="4" class="java.lang.String" itemvalue="Python.06_staircase" />
+      <item index="0" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
+      <item index="1" class="java.lang.String" itemvalue="Python.points on a line" />
+      <item index="2" class="java.lang.String" itemvalue="Python.05 plus minus" />
+      <item index="3" class="java.lang.String" itemvalue="Python.06_staircase" />
+      <item index="4" class="java.lang.String" itemvalue="Python.07_time_conversion" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.06_staircase" />
-        <item index="1" class="java.lang.String" itemvalue="Python.05 plus minus" />
-        <item index="2" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-        <item index="3" class="java.lang.String" itemvalue="Python.points on a line" />
-        <item index="4" class="java.lang.String" itemvalue="Python.03_intro_t-_conditional_statements" />
+        <item index="0" class="java.lang.String" itemvalue="Python.07_time_conversion" />
+        <item index="1" class="java.lang.String" itemvalue="Python.06_staircase" />
+        <item index="2" class="java.lang.String" itemvalue="Python.05 plus minus" />
+        <item index="3" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
+        <item index="4" class="java.lang.String" itemvalue="Python.points on a line" />
       </list>
     </recent_temporary>
   </component>
@@ -474,7 +475,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -664,6 +665,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
