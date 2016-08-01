@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/05_loops.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/points_on_a_line.py" afterPath="$PROJECT_DIR$/hacker_rank/Contests/101 Hack June 2016/points_on_a_line.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Katas_solutions_python.iml" afterPath="$PROJECT_DIR$/.idea/Katas_solutions_python.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" afterPath="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" />
     </list>
     <ignored path="Katas_solutions_python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06_lets_review.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="06_lets_review.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07_arrays.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -88,14 +94,15 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/05_loops.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="418" />
-    <option name="y" value="102" />
+    <option name="x" value="393" />
+    <option name="y" value="109" />
     <option name="width" value="1441" />
-    <option name="height" value="830" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,41 +199,7 @@
       <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.05_loops">
-    <configuration default="false" name="04_diagonal_difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="05 plus minus" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="F:\_code_git\Katas_solutions_python\hacker_rank\Algorithms\warmup\05_plus_minus.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.07_arrays">
     <configuration default="false" name="06_staircase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,6 +247,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/05_loops.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="06_lets_review" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="07_arrays" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -413,19 +420,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-      <item index="1" class="java.lang.String" itemvalue="Python.05 plus minus" />
-      <item index="2" class="java.lang.String" itemvalue="Python.06_staircase" />
-      <item index="3" class="java.lang.String" itemvalue="Python.07_time_conversion" />
-      <item index="4" class="java.lang.String" itemvalue="Python.05_loops" />
+      <item index="0" class="java.lang.String" itemvalue="Python.06_staircase" />
+      <item index="1" class="java.lang.String" itemvalue="Python.07_time_conversion" />
+      <item index="2" class="java.lang.String" itemvalue="Python.05_loops" />
+      <item index="3" class="java.lang.String" itemvalue="Python.06_lets_review" />
+      <item index="4" class="java.lang.String" itemvalue="Python.07_arrays" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.05_loops" />
-        <item index="1" class="java.lang.String" itemvalue="Python.07_time_conversion" />
-        <item index="2" class="java.lang.String" itemvalue="Python.06_staircase" />
-        <item index="3" class="java.lang.String" itemvalue="Python.05 plus minus" />
-        <item index="4" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
+        <item index="0" class="java.lang.String" itemvalue="Python.07_arrays" />
+        <item index="1" class="java.lang.String" itemvalue="Python.06_lets_review" />
+        <item index="2" class="java.lang.String" itemvalue="Python.05_loops" />
+        <item index="3" class="java.lang.String" itemvalue="Python.07_time_conversion" />
+        <item index="4" class="java.lang.String" itemvalue="Python.06_staircase" />
       </list>
     </recent_temporary>
   </component>
@@ -454,19 +461,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="418" y="102" width="1441" height="830" extended-state="0" />
-    <editor active="false" />
+    <frame x="393" y="109" width="1441" height="881" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23272215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36260623" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36195508" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42364016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42272127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -496,7 +503,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -723,8 +730,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding />
         </state>
       </provider>
