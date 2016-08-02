@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" />
     </list>
     <ignored path="Katas_solutions_python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="09_circular_array_rotation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py">
+      <file leaf-file-name="03_equals_stacks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,12 +86,13 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/08_compare_the_triplets.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="420" />
-    <option name="y" value="132" />
+    <option name="x" value="297" />
+    <option name="y" value="131" />
     <option name="width" value="1421" />
     <option name="height" value="845" />
   </component>
@@ -170,6 +171,10 @@
               <option name="myItemId" value="Algorithms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01_implementation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -186,10 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="00_warmup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,7 +472,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="420" y="132" width="1421" height="845" extended-state="0" />
+    <frame x="297" y="131" width="1421" height="845" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33619457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -518,14 +519,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/00_angry_professor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -825,8 +818,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
