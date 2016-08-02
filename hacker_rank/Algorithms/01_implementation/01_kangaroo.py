@@ -1,6 +1,5 @@
 """
 There are two kangaroos on an x-axis ready to jump in the positive direction
-
 """
 
 import math
