@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/armstrong_numbers.py" afterPath="$PROJECT_DIR$/armstrong_numbers.py" />
     </list>
     <ignored path="Katas_solutions_python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="09_save_the_prisoner.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py">
+      <file leaf-file-name="10_strange_counter.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="486">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,11 +94,13 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/07_bigger_is_greater.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/08_jumping_on_ the_clouds_revisited.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" />
+        <option value="$PROJECT_DIR$/armstrong_numbers.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="278" />
+    <option name="x" value="290" />
     <option name="y" value="83" />
     <option name="width" value="1542" />
     <option name="height" value="961" />
@@ -145,60 +148,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01_implementation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -216,24 +165,7 @@
       <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.09_save_the_prisoner">
-    <configuration default="false" name="04_cut_the_sticks" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/04_cut_the_sticks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.10_strange_counter">
     <configuration default="false" name="05_non_divisible_subset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,6 +230,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="10_strange_counter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -437,19 +386,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.04_cut_the_sticks" />
-      <item index="1" class="java.lang.String" itemvalue="Python.05_non_divisible_subset" />
-      <item index="2" class="java.lang.String" itemvalue="Python.06_jumping_on_ the_clouds" />
-      <item index="3" class="java.lang.String" itemvalue="Python.08_jumping_on_ the_clouds_revisited" />
-      <item index="4" class="java.lang.String" itemvalue="Python.09_save_the_prisoner" />
+      <item index="0" class="java.lang.String" itemvalue="Python.05_non_divisible_subset" />
+      <item index="1" class="java.lang.String" itemvalue="Python.06_jumping_on_ the_clouds" />
+      <item index="2" class="java.lang.String" itemvalue="Python.08_jumping_on_ the_clouds_revisited" />
+      <item index="3" class="java.lang.String" itemvalue="Python.09_save_the_prisoner" />
+      <item index="4" class="java.lang.String" itemvalue="Python.10_strange_counter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.09_save_the_prisoner" />
-        <item index="1" class="java.lang.String" itemvalue="Python.08_jumping_on_ the_clouds_revisited" />
-        <item index="2" class="java.lang.String" itemvalue="Python.06_jumping_on_ the_clouds" />
-        <item index="3" class="java.lang.String" itemvalue="Python.05_non_divisible_subset" />
-        <item index="4" class="java.lang.String" itemvalue="Python.04_cut_the_sticks" />
+        <item index="0" class="java.lang.String" itemvalue="Python.10_strange_counter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.09_save_the_prisoner" />
+        <item index="2" class="java.lang.String" itemvalue="Python.08_jumping_on_ the_clouds_revisited" />
+        <item index="3" class="java.lang.String" itemvalue="Python.06_jumping_on_ the_clouds" />
+        <item index="4" class="java.lang.String" itemvalue="Python.05_non_divisible_subset" />
       </list>
     </recent_temporary>
   </component>
@@ -478,7 +427,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="278" y="83" width="1542" height="961" extended-state="0" />
+    <frame x="290" y="83" width="1542" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4048716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -486,7 +435,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27120668" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27001196" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -520,12 +469,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/test" />
     <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/123.py" />
     <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/test" />
     <entry file="file://$PROJECT_DIR$/codewars/beta_chess position parser.py">
@@ -635,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/armstrong_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -830,10 +771,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/armstrong_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="288">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
