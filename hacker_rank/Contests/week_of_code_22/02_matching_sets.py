@@ -16,3 +16,7 @@ n = int(input().strip())
 x = [int(a_temp) for a_temp in input().strip().split(' ')]
 y = [int(a_temp) for a_temp in input().strip().split(' ')]
 
+
+
+
+

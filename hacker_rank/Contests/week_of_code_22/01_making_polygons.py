@@ -21,20 +21,16 @@ number of cuts necessary to make a non-degenerate polygon.
 n = int(input().strip())
 a = [int(a_temp) for a_temp in input().strip().split(' ')]
 
-long = []
-for i in range(n):
-    if a[i] <= 0.5 * (sum(a) - a[i]):
-        long.append(False)
-    else:
-        long.append(True)
-
-if True in long:
-    while True in long:
-        index = 0
-        for i in range(len(long)):
-            if i:
-                index = i
-                break
-
+cuts = 0
+if n == 1:
+    print(2)
+elif n == 2 and a[0] == a[1]:
+    print(2)
 else:
-    print(0)
+    for i in range(n):
+        if a[i] >= sum(a) - a[i]:
+            a[i] = a[i] / 2
+            a.append((a[i]))
+            cuts += 1
+print(cuts)
+
