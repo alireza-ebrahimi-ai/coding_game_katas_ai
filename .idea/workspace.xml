@@ -2,41 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/07_bigger_is_greater.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/01_solve_me_first.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/solve_me_first.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/02_simple_array_sum.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/simple_array_sum.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/03_a_very_big_sum.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/a_very_big_sum.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/04_diagonal_difference.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/diagonal_difference.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/05_plus_minus.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/plus_minus.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/06_staircase.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/staircase.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/07_time_conversion.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/time_conversion.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/08_compare_the_triplets.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/compare_the_triplets.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/circular_array_rotation.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/00_angry_professor.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/angry_professor.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/kangaroo.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/02_divisible_sum_pairs.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/divisible_sum_pairs.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/equals_stacks.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/04_cut_the_sticks.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/cut_the_sticks.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/05_non_divisible_subset.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/non_divisible_subset.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/06_jumping_on_ the_clouds.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/jumping_on_ the_clouds.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/08_jumping_on_ the_clouds_revisited.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/jumping_on_ the_clouds_revisited.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/save_the_prisoner.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/strange_counter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/11_flatland_space_stations.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/flatland_space_stations.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/12_minimum_distances.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/minimum_distances.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/13_extra_long_factorials.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/extra_long_factorials.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/14_matrix_layer_rotation_example.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/matrix_layer_rotation_example.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/15_lisas_workbook.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/lisas_workbook.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/02_strings/00_super_reduced_string.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/strings/src/super_reduced_string.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/03_game_theory/00_game_of_stones.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/game_theory/game_of_stones.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/00_bot_building/00_bot_saves_princess.py" afterPath="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/bot_building/src/bot_saves_princess.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/00_bot_building/01_bot_saves_princess_2.py" afterPath="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/bot_building/src/bot_saves_princess_2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/00_cookie_party.py" afterPath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/cookie_party.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/01_making_polygons.py" afterPath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/making_polygons.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/02_matching_sets.py" afterPath="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/matching_sets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/.cache/v/cache/lastfailed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/.cache/v/cache/lastfailed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" afterPath="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" />
     </list>
     <ignored path="Katas_solutions_python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,28 +26,7 @@
     <favorites_list name="Katas_solutions_python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bigger_is_greater.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_bigger_is_greater.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/01_data_types.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/02_operators.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/03_intro_t-_conditional_statements.py" />
         <option value="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/points on a line.py" />
@@ -140,16 +89,17 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/15_lisas_workbook.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/07_bigger_is_greater.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/test/test_07_bigger_is_greater.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1176" />
+    <option name="y" value="106" />
+    <option name="width" value="1835" />
+    <option name="height" value="940" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -248,10 +198,6 @@
               <option name="myItemId" value="implementation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -274,6 +220,10 @@
               <option name="myItemId" value="implementation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -294,71 +244,20 @@
       <recent name="$PROJECT_DIR$/hacker_rank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.test_bigger_is_greater">
-    <configuration default="false" name="01_making_polygons" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bigger_is_greater">
+    <configuration default="false" name="bigger_is_greater" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/making_polygons.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="02_matching_sets" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/matching_sets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="07_bigger_is_greater" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/07_bigger_is_greater.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="15_lisas_workbook" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/15_lisas_workbook.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -545,21 +444,15 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python tests.test_bigger_is_greater" />
-      <item index="1" class="java.lang.String" itemvalue="Python.01_making_polygons" />
-      <item index="2" class="java.lang.String" itemvalue="Python.02_matching_sets" />
-      <item index="3" class="java.lang.String" itemvalue="Python.07_bigger_is_greater" />
-      <item index="4" class="java.lang.String" itemvalue="Python.15_lisas_workbook" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bigger_is_greater" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
-        <item index="1" class="java.lang.String" itemvalue="Python.07_bigger_is_greater" />
-        <item index="2" class="java.lang.String" itemvalue="Python.15_lisas_workbook" />
-        <item index="3" class="java.lang.String" itemvalue="Python.02_matching_sets" />
-        <item index="4" class="java.lang.String" itemvalue="Python.01_making_polygons" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.bigger_is_greater" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
       </list>
     </recent_temporary>
   </component>
@@ -580,34 +473,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_letter_size - 2016.08.25 at 18h 59m 58s.xml">
+    <history-entry file="py_test_in_test_letter_size - 2016.08.26 at 11h 55m 33s.xml">
       <configuration name="py.test in test_letter_size" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_letter_size - 2016.08.26 at 10h 07m 00s.xml">
+    <history-entry file="py_test_in_test_letter_size - 2016.08.26 at 11h 56m 16s.xml">
       <configuration name="py.test in test_letter_size" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 09m 04s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 17m 04s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 10m 30s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 21m 32s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 11m 08s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 23m 52s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 11m 32s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 24m 12s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 11m 51s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 25m 46s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 37m 50s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 43m 58s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 37m 58s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 50m 44s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
-    <history-entry file="test_bigger_is_greater - 2016.08.26 at 10h 39m 41s.xml">
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 51m 09s.xml">
       <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
   </component>
@@ -621,20 +514,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="106" width="1835" height="940" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2691048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27207506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38790697" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49702027" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43255296" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4316279" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -670,25 +563,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/solve_me_first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/simple_array_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/01_data_types.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1026,18 +905,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py">
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1112027643/itertools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="155">
+          <caret line="462" column="6" selection-start-line="462" selection-start-column="6" selection-end-line="462" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="335">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding />
         </state>
       </provider>
