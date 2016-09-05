@@ -8,24 +8,28 @@
 2
 
 """
+import math
 
 n, m = input().strip().split(' ')
 n, m = [int(n), int(m)]
 c = [int(c_temp) for c_temp in input().strip().split(' ')]
 
+mean_distance = []
+c.sort()
 
-distance = []
-min_dist = n
-for i in range(n):
-    if i in c:
-        distance.append(0)
-    else:
-        min_dist = n
-        for j in range(m):
-            if min_dist > abs(i - j):
-                min_dist = abs(i - j)
-        distance.append(min_dist)
+if len(c) < 2:
+    mean_distance.append(abs(0 - c[0]))
+    mean_distance.append(abs(n - c[0] - 1))
+    print(math.floor(max(mean_distance)))
+else:
+    if c[0] != 0:
+        mean_distance.append(round(abs(0 - c[0])))
+    for i in range(0, len(c) - 1):
+        mean_distance.append(round(abs(c[i] - c[i + 1])) / 2)
+    if c[len(c) - 1] != n:
+        mean_distance.append(round(abs(n - c[len(c) - 1] - 1)))
+    print(math.floor(max(mean_distance)))
 
-print(max(distance))
+
 
 
