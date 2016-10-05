@@ -90,14 +90,27 @@ class GameOptimizer:
         next_enemy_step = global_enemies[0]
         next_enemy_step['x'], next_enemy_step['y'] = game_helper.enemy_next_position(global_enemies[0])
 
-        # one-time predictor
-        
+        # one-time predictor, 0 = move, 1 = shoot
+        shoots = 0
+        distance_to_target = game_helper.distance_to_object(global_enemies[0], global_data_points[0])
+        max_depth = distance_to_target // 500
+        player_predict = {'x': global_player['x'], 'y': global_player['y']}
+        enemy_predict = {'x': global_enemies[0]['x'], 'y': global_enemies[0]['y']}
+
+        # best combination:
+
+
+
+
+
 
         # debugging values & parameters:
-        print('Current score: %s' % current_score, file=sys.stderr)
-        print('HP_total: %s' % self.hp_total, file=sys.stderr)
-        print('Damage: %s' % current_damage, file=sys.stderr)
-        print('Next x,y of enemy: %s %s' % (next_enemy_step['x'], next_enemy_step['y']), file=sys.stderr)
+        # print('Current score: %s' % current_score, file=sys.stderr)
+        # print('HP_total: %s' % self.hp_total, file=sys.stderr)
+        # print('Damage: %s' % current_damage, file=sys.stderr)
+        # print('Next x,y of enemy: %s %s' % (next_enemy_step['x'], next_enemy_step['y']), file=sys.stderr)
+        print('Distance to target: %s' % distance_to_target, file=sys.stderr)
+        print('Moves to target: %s' % max_depth, file=sys.stderr)
 
 
 game_helper = GameMechanicsHelper()
