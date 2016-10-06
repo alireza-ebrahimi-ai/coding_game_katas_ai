@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="" />
+    <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codingames/the_accountant.py" afterPath="$PROJECT_DIR$/codingames/the_accountant.py" />
+    </list>
     <ignored path="Katas_solutions_python.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,7 +13,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -20,12 +21,24 @@
     <favorites_list name="Katas_solutions_python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="00_angry_professor.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py">
+    <leaf>
+      <file leaf-file-name="the_accountant.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codingames/the_accountant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="the_accountant_playground.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codingames/the_accountant_playground.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="82" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -46,20 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/codewars/123.py" />
-        <option value="$PROJECT_DIR$/codewars/src/kuy5/123.py" />
-        <option value="$PROJECT_DIR$/codewars/src/kuy5/test" />
-        <option value="$PROJECT_DIR$/codewars/src/kuy5/scramblies.py" />
-        <option value="$PROJECT_DIR$/codewars/tests/test_credit_card_issuer_checking.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/00_hello_world.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/03_a_very_big_sum.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/01_data_types.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/02_operators.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/03_intro_t-_conditional_statements.py" />
-        <option value="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/points on a line.py" />
         <option value="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/easy_GCD.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/04_class_vs_instance.py" />
@@ -68,14 +67,57 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/05_loops.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/09_recursion.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/08_dictionaries_and_maps.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/10_binary_numbers.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/11_2D_arrays.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/12_inheritance.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/01_kangaroo.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/02_divisible_sum_pairs.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/00_angry_professor.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/08_compare_the_triplets.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/01_kangaroo.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/00_warmup/09_circular_array_rotation.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/03_equals_stacks.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/04_cut_the_sticks.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/05_non_divisible_subset.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/06_jumping_on_ the_clouds.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/08_jumping_on_ the_clouds_revisited.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/09_save_the_prisoner.py" />
+        <option value="$PROJECT_DIR$/armstrong_numbers.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/10_strange_counter.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/00_cookie_party.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/00_bot_building/00_bot_saves_princess.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/00_bot_building/01_bot_saves_princess_2.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/11_flatland_space_stations.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/02_strings/00_super_reduced_string.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/12_minimum_distances.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/13_extra_long_factorials.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/14_matrix_layer_rotation.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/14_matrix_layer_rotation_example.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/03_game_theory/00_game_of_stones.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/01_making_polygons.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/02_matching_sets.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/15_lisas_workbook.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/07_bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/01_implementation/test/test_07_bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
+        <option value="$PROJECT_DIR$/codingames/temp.py" />
+        <option value="$PROJECT_DIR$/codingames/the_accountant_playground.py" />
+        <option value="$PROJECT_DIR$/codingames/the_accountant.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="279" />
+    <option name="y" value="189" />
+    <option name="width" value="1568" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -102,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,152 +173,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="warmup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_solutions_python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hacker_rank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Implementation" />
+              <option name="myItemId" value="codingames" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\_code_git\Katas_solutions_python\hacker_rank" />
+      <recent name="$PROJECT_DIR$/codingames" />
+      <recent name="$PROJECT_DIR$/hacker_rank/Artificial_intelligence/bot_building/src" />
+      <recent name="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src" />
+      <recent name="$PROJECT_DIR$/hacker_rank/Algorithms/strings/src" />
+      <recent name="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.07_time_conversion">
-    <configuration default="false" name="04_diagonal_difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.the_accountant_playground">
+    <configuration default="false" name="bigger_is_greater" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="points on a line" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="py.test in test_letter_size" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
+      <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="F:\_code_git\Katas_solutions_python\hacker_rank\contests\101 Hack June 2016\points_on_a_line.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py" />
+      <option name="keywords" value="test_letter_size" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="05 plus minus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="the_accountant_playground" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codingames" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="F:\_code_git\Katas_solutions_python\hacker_rank\Algorithms\warmup\05_plus_minus.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="06_staircase" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="07_time_conversion" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codingames/the_accountant_playground.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -414,20 +389,41 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-      <item index="1" class="java.lang.String" itemvalue="Python.points on a line" />
-      <item index="2" class="java.lang.String" itemvalue="Python.05 plus minus" />
-      <item index="3" class="java.lang.String" itemvalue="Python.06_staircase" />
-      <item index="4" class="java.lang.String" itemvalue="Python.07_time_conversion" />
+    <configuration default="false" name="test_bigger_is_greater" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Katas_solutions_python" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.test_bigger_is_greater" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bigger_is_greater" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
+      <item index="3" class="java.lang.String" itemvalue="Python.the_accountant_playground" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.07_time_conversion" />
-        <item index="1" class="java.lang.String" itemvalue="Python.06_staircase" />
-        <item index="2" class="java.lang.String" itemvalue="Python.05 plus minus" />
-        <item index="3" class="java.lang.String" itemvalue="Python.04_diagonal_difference" />
-        <item index="4" class="java.lang.String" itemvalue="Python.points on a line" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.the_accountant_playground" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bigger_is_greater" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_letter_size" />
       </list>
     </recent_temporary>
   </component>
@@ -448,33 +444,75 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_Mastercard - 2016.06.17 at 21h 20m 47s.xml">
-      <configuration name="py.test in test_Mastercard" configurationId="tests" />
+    <history-entry file="py_test_in_test_letter_size - 2016.08.26 at 11h 55m 33s.xml">
+      <configuration name="py.test in test_letter_size" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_dna_sequence_tester_py - 2016.06.17 at 15h 43m 38s.xml">
-      <configuration name="py.test in test_dna_sequence_tester.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_letter_size - 2016.08.26 at 11h 56m 16s.xml">
+      <configuration name="py.test in test_letter_size" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 17m 04s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 21m 32s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 23m 52s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 24m 12s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 25m 46s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 43m 58s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 50m 44s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
+    </history-entry>
+    <history-entry file="test_bigger_is_greater - 2016.08.26 at 12h 51m 09s.xml">
+      <configuration name="test_bigger_is_greater" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="279" y="189" width="1568" height="824" extended-state="1" />
+    <editor active="false" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30857742" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3223301" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4965422" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 51f05c90c536f5800058e2d55ef6db7f96bb1431
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42364016" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4316279" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -491,6 +529,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/matching_sets.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -498,213 +543,367 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/04_class_vs_instance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy6/dna_sequence_tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/tests/test_dna_sequence_tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/scramblies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy6/collatz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/123.py" />
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/test" />
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/123.py" />
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/test" />
-    <entry file="file://$PROJECT_DIR$/codewars/beta_chess position parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/123.py" />
-    <entry file="file://$PROJECT_DIR$/codewars/beta_chess position parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/test" />
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/123.py" />
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy6/collatz.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy5/scramblies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/src/kuy6/dna_sequence_tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/tests/test_dna_sequence_tester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codewars/tests/test_credit_card_issuer_checking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/armstrong_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/00_hello_world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first" />
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/01_solve_me_first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/02_simple_array_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/01_data_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/03_a_very_big_sum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/02_operators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/easy_GCD.py" />
-    <entry file="file://$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/points_on_a_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py">
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/diagonal_difference.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/plus_minus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/staircase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/03_intro_in_conditional_statements.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/04_class_vs_instance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05_plus_minus.py">
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/00_hello_world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/06_staircase.py">
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.5/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="308" column="0" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/07_time_conversion.py">
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/05_loops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/06_lets_review.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/07_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/09_recursion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/08_dictionaries_and_maps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/10_binary_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/11_2D_arrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/12_inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/compare_the_triplets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/time_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/warmup/src/circular_array_rotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Contests/101_hack_june_2016/points_on_a_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/non_divisible_subset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/divisible_sum_pairs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/armstrong_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/save_the_prisoner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Artificial_intelligence/bot_building/src/bot_saves_princess_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Artificial_intelligence/bot_building/src/bot_saves_princess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/strings/src/super_reduced_string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/cookie_party.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/game_theory/game_of_stones.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/making_polygons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Contests/week_of_code_22/matching_sets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/Implementation/00_angry_professor.py">
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/jumping_on_ the_clouds_revisited.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/jumping_on_ the_clouds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/lisas_workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/equals_stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/cut_the_sticks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/angry_professor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/kangaroo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/strange_counter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/flatland_space_stations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/minimum_distances.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/extra_long_factorials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/matrix_layer_rotation_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-354">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codewars/tests/test_dna_sequence_tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-1112027643/itertools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="462" column="6" selection-start-line="462" selection-start-column="6" selection-end-line="462" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/test/test_bigger_is_greater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codingames/hypersonic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-887">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codingames/the_accountant_playground.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="82" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="82" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codingames/the_accountant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
