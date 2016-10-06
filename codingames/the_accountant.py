@@ -80,29 +80,44 @@ class GameOptimizer:
             return 0
 
     def main_optimizer(self):
-        """
-        case #1 algorithm:
-            - can I kill enemy? if this requires more than 1 shoot; #max dmg = round(10.4)
-            -
-        """
-        current_score = self.count_score()
-        current_damage = game_helper.damage_dealt(global_player, global_enemies[0])
+
         next_enemy_step = global_enemies[0]
         next_enemy_step['x'], next_enemy_step['y'] = game_helper.enemy_next_position(global_enemies[0])
-
-        # one-time predictor, 0 = move, 1 = shoot
-        shoots = 0
         distance_to_target = game_helper.distance_to_object(global_enemies[0], global_data_points[0])
-        max_depth = distance_to_target // 500
-        player_predict = {'x': global_player['x'], 'y': global_player['y']}
-        enemy_predict = {'x': global_enemies[0]['x'], 'y': global_enemies[0]['y']}
+        max_depth = int(distance_to_target // 500)
 
-        # best combination:
+        # generate all variants
+        moves_tree = []
+        for i in range(max_depth):
+            temp = []
+            for k in range(max_depth):
+                if k < i:
+                    temp.append(0)
+                else:
+                    temp.append(1)
+            moves_tree.append(temp)
 
-
-
-
-
+        # analisys the best solution
+        best_analisys = {'score': 0, 'tree': ''}
+        for decision in moves_tree:
+            shoots = self.shots_current
+            current_enemy_hp = global_enemies[0]['hp']
+            player_predict = global_player
+            enemy_predict = global_enemies[0]
+            for move in decision:
+                if move == 0:
+                    # move x, y
+                    player_predict = game_helper.return_new_pos(1000, player_predict, global_data_points[0])
+                    enemy_predict = game_helper.enemy_next_position(enemy_predict)
+                else:
+                    # shoot id
+                    shoots += 1
+                    current_enemy_hp -= game_helper.damage_dealt(player_predict, enemy_predict)
+                    if current_enemy_hp <= 0:
+                        score_move = 100 + 10 + 1 * max(0, (self.hp_total - 3 * shoots)) * 3
+                        if score_move > best_analisys['score']:
+                            best_analisys['score'] = score_move
+                            best_analisys['tree'] = decision
 
         # debugging values & parameters:
         # print('Current score: %s' % current_score, file=sys.stderr)
@@ -111,6 +126,9 @@ class GameOptimizer:
         # print('Next x,y of enemy: %s %s' % (next_enemy_step['x'], next_enemy_step['y']), file=sys.stderr)
         print('Distance to target: %s' % distance_to_target, file=sys.stderr)
         print('Moves to target: %s' % max_depth, file=sys.stderr)
+        print(best_analisys, file=sys.stderr)
+
+        return best_analisys['tree'][0]
 
 
 game_helper = GameMechanicsHelper()
@@ -138,7 +156,11 @@ while True:
             optimizer.hp_total += enemy_life
         first_round = False
 
-    optimizer.main_optimizer()
-    print("MOVE 8000 4500")
+    result = optimizer.main_optimizer()
+    if result == 0:
+        print('MOVE 8000 4500')
+    else:
+        print('SHOOT 0')
+        optimizer.shots_current += 1
 
     # To debug: print("Debug messages...", file=sys.stderr)
