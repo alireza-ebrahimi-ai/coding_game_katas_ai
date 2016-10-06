@@ -104,18 +104,21 @@ class GameOptimizer:
             current_enemy_hp = global_enemies[0]['hp']
             player_predict = global_player
             enemy_predict = global_enemies[0]
+            fail = False
             for move in decision:
                 if move == 0:
                     # move x, y
-                    player_predict = game_helper.return_new_pos(1000, player_predict, global_data_points[0])
-                    enemy_predict = game_helper.enemy_next_position(enemy_predict)
+                    if game_helper.distance_to_object(player_predict, enemy_predict) < 2000:
+                        fail = True
+                    player_predict['x'], player_predict['y'] = game_helper.return_new_pos(1000, player_predict, global_data_points[0])
+                    enemy_predict['x'], enemy_predict['y'] = game_helper.enemy_next_position(enemy_predict)
                 else:
                     # shoot id
                     shoots += 1
                     current_enemy_hp -= game_helper.damage_dealt(player_predict, enemy_predict)
                     if current_enemy_hp <= 0:
                         score_move = 100 + 10 + 1 * max(0, (self.hp_total - 3 * shoots)) * 3
-                        if score_move > best_analisys['score']:
+                        if (score_move > best_analisys['score']) and not fail:
                             best_analisys['score'] = score_move
                             best_analisys['tree'] = decision
 
