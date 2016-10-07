@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441e9e4c-9dea-4c14-9753-f13222a8f941" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/codingames/the_accountant_playground.py" afterPath="$PROJECT_DIR$/codingames/the_accountant_server.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/kustikov.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/kustikov.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codingames/the_accountant.py" afterPath="$PROJECT_DIR$/codingames/the_accountant.py" />
     </list>
     <ignored path="Katas_solutions_python.iws" />
@@ -25,21 +28,11 @@
       <file leaf-file-name="the_accountant.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codingames/the_accountant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+            <state relative-caret-position="144">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#46#56#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="the_accountant_playground.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codingames/the_accountant_playground.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="82" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="82" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hacker_rank/contests/101 Hack June 2016/easy_GCD.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/04_diagonal_difference.py" />
         <option value="$PROJECT_DIR$/hacker_rank/30_days_of_code_challenges/src/04_class_vs_instance.py" />
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/warmup/05 plus minus.py" />
@@ -109,15 +101,16 @@
         <option value="$PROJECT_DIR$/hacker_rank/Algorithms/implementation/src/bigger_is_greater.py" />
         <option value="$PROJECT_DIR$/codingames/temp.py" />
         <option value="$PROJECT_DIR$/codingames/the_accountant_playground.py" />
+        <option value="$PROJECT_DIR$/codingames/the_accountant_server.py" />
         <option value="$PROJECT_DIR$/codingames/the_accountant.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="189" />
-    <option name="width" value="1568" />
-    <option name="height" value="824" />
+    <option name="x" value="205" />
+    <option name="y" value="142" />
+    <option name="width" value="1695" />
+    <option name="height" value="930" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -250,7 +243,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Katas_solutions_python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codingames/the_accountant_playground.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codingames/the_accountant_server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -485,10 +478,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="279" y="189" width="1568" height="824" extended-state="1" />
-    <editor active="false" />
+    <frame x="205" y="142" width="1695" height="930" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3223301" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29784688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.50208336" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
@@ -880,20 +873,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codingames/the_accountant_playground.py">
+    <entry file="file://$PROJECT_DIR$/codingames/the_accountant_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="82" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="82" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codingames/the_accountant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="104" column="42" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
+        <state relative-caret-position="144">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#46#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

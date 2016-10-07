@@ -1,3 +1,8 @@
+"""
+Codingame challenge: The Accountant
+
+"""
+
 import sys
 import math
 
@@ -23,14 +28,14 @@ Expert rules:
 
 
 class GameMechanicsHelper:
-    global global_data_count, global_data_points, global_enemies, global_player
+    global global_data_count, global_data_points, global_enemies, global_player, global_enemy_count
 
     @staticmethod
-    def distance_to_object(player_, enemy):
-        return math.sqrt((player_['x'] - enemy['x']) ** 2 + (player_['y'] - enemy['y']) ** 2)
+    def distance_to_object(object_1, object_2):
+        return round(math.sqrt((object_1['x'] - object_2['x']) ** 2 + (object_1['y'] - object_2['y']) ** 2))
 
     def damage_dealt(self, player_, enemy):
-        return round(125000 / self.distance_to_object(player_=player_, enemy=enemy) ** 1.2)
+        return round(125000 / self.distance_to_object(player_, enemy) ** 1.2)
 
     def return_new_pos(self, step, current_pos, target):
         max_dist = self.distance_to_object(current_pos, target)
@@ -39,29 +44,73 @@ class GameMechanicsHelper:
         dy = target['y'] - current_pos['y']
         return round(current_pos['x'] + dx * delta_dist), round(current_pos['y'] + dy * delta_dist)
 
-    def enemy_next_position(self, enemy):
+    def enemy_next_position(self, enemy, _data_points=global_data_points, _data_count=global_data_count):
         # find the nearest data
-        the_nearest_data = 0
-        for i in range(global_data_count):
-            if self.distance_to_object(enemy, global_data_points[i]) < self.distance_to_object(enemy, global_data_points[the_nearest_data]):
-                the_nearest_data = i
-        return self.return_new_pos(500, enemy, global_data_points[the_nearest_data])
+        the_nearest = 0
+        for i in range(_data_count):
+            if self.distance_to_object(enemy, _data_points[i]) < self.distance_to_object(enemy, _data_points[the_nearest]):
+                the_nearest = i
+        return self.return_new_pos(500, enemy, _data_points[the_nearest])
 
-    def player_next_position(self, target):
-        return self.return_new_pos(1000, global_player, target)
+    def player_next_position(self, target, player=global_player):
+        return self.return_new_pos(1000, player, target)
+
+    def move_to_objects_center(self, enemy_count=global_enemy_count, data_count=global_data_count,
+                               data_points=global_data_points, enemies=global_enemies, player=global_player):
+
+        if enemy_count > 1:
+            all_targets = data_count + enemy_count + 1
+            all_x, all_y = 0, 0
+            for data_id_ in range(data_count):
+                all_x += data_points[data_id_]['x']
+                all_y += data_points[data_id_]['y']
+            for enemy_id_ in range(enemy_count):
+                all_x += enemies[enemy_id_]['x']
+                all_y += enemies[enemy_id_]['y']
+            all_x += player['x']
+            all_y += player['y']
+            return round(all_x / all_targets), round(all_y / all_targets)
+        else:
+            the_nearest_data = 0
+            for i in range(data_count):
+                if self.distance_to_object(enemies[0], data_points[i]) < self.distance_to_object(
+                                                                            enemies[0], data_points[the_nearest_data]):
+                    the_nearest_data = i
+            return data_points[the_nearest_data]['x'], data_points[the_nearest_data]['y']
+
+    def find_the_closest_enemy_to_datapoint(self, data_count=global_data_count, enemy_count=global_enemy_count,
+                                            data_points=global_data_points, enemies=global_enemies):
+
+        answer = {'distance': 25000, 'enemy_num': 0, 'dp_num': 0}
+        for id_dp in range(data_count):
+            for id_enemy in range(enemy_count):
+                distance = self.distance_to_object(data_points[id_dp], enemies[id_enemy])
+                if distance < answer['distance']:
+                    answer['distance'] = distance
+                    answer['enemy_num'] = id_enemy
+                    answer['dp_num'] = id_dp
+        return answer
+
+    def find_the_closest_enemy_to_player(self, enemy_count=global_enemy_count, player=global_player,
+                                         enemies=global_enemies):
+
+        answer = {'distance': 25000, 'enemy_num': 0}
+        for id_enemy in range(enemy_count):
+            distance = self.distance_to_object(player, enemies[id_enemy])
+            if distance < answer['distance']:
+                answer['distance'] = distance
+                answer['enemy_num'] = id_enemy
+        return answer
 
 
 class GameOptimizer:
-    global global_data_count, global_data_points, global_enemies, global_player
+    global global_data_count, global_data_points, global_enemies, global_player, global_enemy_count
 
     def __init__(self):
-        self.current_score = 0
-        self.predict = 0
-        self.kill_price = 10
-        self.data_price = 100
         self.shots_current = 0
         self.hp_total = 0
         self.enemies_killed = 0
+        self.enemies_begin = 0
 
     def extra_points(self):
         """
@@ -79,14 +128,13 @@ class GameOptimizer:
         else:
             return 0
 
-    def main_optimizer(self):
-
+    def main_optimizer_v1(self):
         next_enemy_step = global_enemies[0]
-        next_enemy_step['x'], next_enemy_step['y'] = game_helper.enemy_next_position(global_enemies[0])
-        distance_to_target = game_helper.distance_to_object(global_enemies[0], global_data_points[0])
+        next_enemy_step['x'], next_enemy_step['y'] = game_mechanics.enemy_next_position(global_enemies[0])
+        distance_to_target = game_mechanics.distance_to_object(global_enemies[0], global_data_points[0])
         max_depth = int(distance_to_target // 500)
 
-        # generate all variants
+        # generate all simple variations
         moves_tree = []
         for i in range(max_depth):
             temp = []
@@ -108,14 +156,14 @@ class GameOptimizer:
             for move in decision:
                 if move == 0:
                     # move x, y
-                    if game_helper.distance_to_object(player_predict, enemy_predict) < 2000:
+                    if game_mechanics.distance_to_object(player_predict, enemy_predict) < 2000:
                         fail = True
-                    player_predict['x'], player_predict['y'] = game_helper.return_new_pos(1000, player_predict, global_data_points[0])
-                    enemy_predict['x'], enemy_predict['y'] = game_helper.enemy_next_position(enemy_predict)
+                    player_predict['x'], player_predict['y'] = game_mechanics.return_new_pos(1000, player_predict, global_data_points[0])
+                    enemy_predict['x'], enemy_predict['y'] = game_mechanics.enemy_next_position(enemy_predict)
                 else:
                     # shoot id
                     shoots += 1
-                    current_enemy_hp -= game_helper.damage_dealt(player_predict, enemy_predict)
+                    current_enemy_hp -= game_mechanics.damage_dealt(player_predict, enemy_predict)
                     if current_enemy_hp <= 0:
                         score_move = 100 + 10 + 1 * max(0, (self.hp_total - 3 * shoots)) * 3
                         if (score_move > best_analisys['score']) and not fail:
@@ -127,14 +175,27 @@ class GameOptimizer:
         # print('HP_total: %s' % self.hp_total, file=sys.stderr)
         # print('Damage: %s' % current_damage, file=sys.stderr)
         # print('Next x,y of enemy: %s %s' % (next_enemy_step['x'], next_enemy_step['y']), file=sys.stderr)
-        print('Distance to target: %s' % distance_to_target, file=sys.stderr)
-        print('Moves to target: %s' % max_depth, file=sys.stderr)
+        # print('Distance to target: %s' % distance_to_target, file=sys.stderr)
+        # print('Moves to target: %s' % max_depth, file=sys.stderr)
         print(best_analisys, file=sys.stderr)
 
         return best_analisys['tree'][0]
 
+    def main_optimizer_v2(self):
+        # save all global parameters for simulating
+        simulated_data_points = global_data_points
+        simulated_enemy_count = global_enemy_count
+        simulated_player = global_player
+        simulated_data_count = global_data_count
+        simulated_enemies = global_enemies
 
-game_helper = GameMechanicsHelper()
+        # find the closest enemy to player and data_point
+        the_closest_enemy_to_datapoint = game_mechanics.find_the_closest_enemy_to_datapoint()
+        the_closest_enemy_to_player = game_mechanics.find_the_closest_enemy_to_player()
+
+
+
+game_mechanics = GameMechanicsHelper()
 optimizer = GameOptimizer()
 
 first_round = True
@@ -151,19 +212,22 @@ while True:
         data_id, data_x, data_y = [int(j) for j in input().split()]
         global_data_points.append({'id': data_id, 'x': data_x, 'y': data_y})
 
-    enemy_count = int(input())
-    for i in range(enemy_count):
+    global_enemy_count = int(input())
+    for i in range(global_enemy_count):
         enemy_id, enemy_x, enemy_y, enemy_life = [int(j) for j in input().split()]
         global_enemies.append({'id': enemy_id, 'x': enemy_x, 'y': enemy_y, 'hp': enemy_life})
         if first_round:
+            optimizer.enemies_begin = global_enemy_count
             optimizer.hp_total += enemy_life
         first_round = False
 
-    result = optimizer.main_optimizer()
+    result = optimizer.main_optimizer_v1()
     if result == 0:
-        print('MOVE 8000 4500')
+        x_move_player, y_move_player = game_mechanics.move_to_objects_center()
+        print('MOVE %s %s' % (x_move_player, y_move_player))
     else:
-        print('SHOOT 0')
+        shooting_enemy_id = global_enemies[0]['id']
+        print('SHOOT %s' % shooting_enemy_id)
         optimizer.shots_current += 1
 
     # To debug: print("Debug messages...", file=sys.stderr)
