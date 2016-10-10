@@ -59,7 +59,8 @@ class GameMechanicsHelper:
         # find the nearest data
         the_nearest = 0
         for i in range(_data_count):
-            if self.distance_to_object(enemy, _data_points[i]) < self.distance_to_object(enemy, _data_points[the_nearest]):
+            if self.distance_to_object(enemy, _data_points[i]) < self.distance_to_object(enemy,
+                                                                                         _data_points[the_nearest]):
                 the_nearest = i
         return self.return_new_pos(500, enemy, _data_points[the_nearest])
 
@@ -191,7 +192,8 @@ class GameOptimizer:
                     # move x, y
                     if game_mechanics.distance_to_object(player_predict, enemy_predict) < 2000:
                         fail = True
-                    player_predict['x'], player_predict['y'] = game_mechanics.return_new_pos(1000, player_predict, global_data_points[0])
+                    player_predict['x'], player_predict['y'] = game_mechanics.return_new_pos(1000, player_predict,
+                                                                                             global_data_points[0])
                     enemy_predict['x'], enemy_predict['y'] = game_mechanics.enemy_next_position(enemy_predict)
                 else:
                     # shoot id
@@ -225,8 +227,63 @@ class GameOptimizer:
         # find the closest enemy to player and data_point
         the_closest_enemy_to_datapoint = game_mechanics.find_the_closest_enemy_to_datapoint()
         the_closest_enemy_to_player = game_mechanics.find_the_closest_enemy_to_player()
+        distance_to_target_player = game_mechanics.distance_to_object(the_closest_enemy_to_player, simulated_player)
+        max_depth_player = int(distance_to_target_player // 500)
+        # distance_to_target_datapoint = game_mechanics.distance_to_object(the_closest_enemy_to_datapoint,
+        # simulated_player)
+        # max_depth_player = int(distance_to_target_player // 500)
 
+        # generate all simple variations for closest enemy to player
+        moves_tree_player = []
+        for i in range(max_depth_player):
+            temp = []
+            for k in range(max_depth_player):
+                if k < i:
+                    temp.append(0)
+                else:
+                    temp.append(1)
+            moves_tree_player.append(temp)
 
+        # analisys the best solution
+        best_analisys = {'score': 0, 'tree': ''}
+        for decision in moves_tree_player:
+            shoots = self.shots_current
+
+            fail = False
+            for move in decision:
+                the_closest_enemy_to_player = game_mechanics.find_the_closest_enemy_to_player()
+                if move == 0:
+                    # move x, y
+                    for id_sim in range(simulated_enemy_count):
+                        if game_mechanics.distance_to_object(simulated_player, simulated_enemies[id_sim]) < 2000:
+                            fail = True
+                    new_target = {'x': 0, 'y': 0}
+                    new_target['x'], new_target['y'] = game_mechanics.move_to_objects_center(simulated_enemy_count,
+                                                                                             simulated_data_count,
+                                                                                             simulated_data_points,
+                                                                                             simulated_enemies,
+                                                                                             simulated_player)
+
+                    simulated_player['x'], simulated_player['y'] = game_mechanics.return_new_pos(
+                        1000, simulated_player, new_target)
+
+                    for id_sim in range(simulated_enemy_count):
+                        simulated_enemies[id_sim]['x'], simulated_enemies[id_sim]['y'] = \
+                            game_mechanics.enemy_next_position(simulated_enemies[id_sim],
+                                                               simulated_data_points, simulated_data_count)
+                else:
+                    # shoot id
+                    shoots += 1
+                    the_closest_enemy_to_player['hp'] -= game_mechanics.damage_dealt(simulated_player, the_closest_enemy_to_player)
+                    if the_closest_enemy_to_player['hp'] <= 0:
+                        score_move = 100 + 10 + 1 * max(0, (self.hp_total - 3 * shoots)) * 3
+                        if (score_move > best_analisys['score']) and not fail:
+                            best_analisys['score'] = score_move
+                            best_analisys['tree'] = decision
+
+        print(best_analisys, file=sys.stderr)
+        if best_analisys['tree'][0] == 0
+        return best_analisys['tree'][0]
 
 game_mechanics = GameMechanicsHelper()
 optimizer = GameOptimizer()
@@ -253,7 +310,8 @@ while True:
             optimizer.enemies_begin = global_enemy_count
             optimizer.hp_total += enemy_life
         first_round = False
-    game_mechanics.update_globals(global_data_count, global_data_points, global_enemies, global_player, global_enemy_count)
+    game_mechanics.update_globals(global_data_count, global_data_points, global_enemies, global_player,
+                                  global_enemy_count)
 
     result = optimizer.main_optimizer_v1()
     if result == 0:
