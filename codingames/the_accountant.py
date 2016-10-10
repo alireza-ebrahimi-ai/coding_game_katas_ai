@@ -28,7 +28,13 @@ Expert rules:
 
 
 class GameMechanicsHelper:
-    global global_data_count, global_data_points, global_enemies, global_player, global_enemy_count
+
+    def update_globals(self, data_count, data_points, enemies, player, enemy_count):
+        self.global_data_count = data_count
+        self.global_data_points = data_points
+        self.global_enemies = enemies
+        self.global_player = player
+        self.global_enemy_count = enemy_count
 
     @staticmethod
     def distance_to_object(object_1, object_2):
@@ -44,7 +50,12 @@ class GameMechanicsHelper:
         dy = target['y'] - current_pos['y']
         return round(current_pos['x'] + dx * delta_dist), round(current_pos['y'] + dy * delta_dist)
 
-    def enemy_next_position(self, enemy, _data_points=global_data_points, _data_count=global_data_count):
+    def enemy_next_position(self, enemy, _data_points=None, _data_count=None):
+        # check
+        if _data_count is None:
+            _data_count = self.global_data_count
+        if _data_points is None:
+            _data_points = self.global_data_points
         # find the nearest data
         the_nearest = 0
         for i in range(_data_count):
@@ -52,11 +63,22 @@ class GameMechanicsHelper:
                 the_nearest = i
         return self.return_new_pos(500, enemy, _data_points[the_nearest])
 
-    def player_next_position(self, target, player=global_player):
+    def player_next_position(self, target, player=None):
+        if player is None:
+            player = self.global_player
         return self.return_new_pos(1000, player, target)
 
-    def move_to_objects_center(self, enemy_count=global_enemy_count, data_count=global_data_count,
-                               data_points=global_data_points, enemies=global_enemies, player=global_player):
+    def move_to_objects_center(self, enemy_count=None, data_count=None, data_points=None, enemies=None, player=None):
+        if enemy_count is None:
+            enemy_count = self.global_enemy_count
+        if data_count is None:
+            data_count = self.global_data_count
+        if data_points is None:
+            data_points = self.global_data_points
+        if enemies is None:
+            enemies = self.global_enemies
+        if player is None:
+            player = self.global_player
 
         if enemy_count > 1:
             all_targets = data_count + enemy_count + 1
@@ -78,9 +100,15 @@ class GameMechanicsHelper:
                     the_nearest_data = i
             return data_points[the_nearest_data]['x'], data_points[the_nearest_data]['y']
 
-    def find_the_closest_enemy_to_datapoint(self, data_count=global_data_count, enemy_count=global_enemy_count,
-                                            data_points=global_data_points, enemies=global_enemies):
-
+    def find_the_closest_enemy_to_datapoint(self, data_count=None, enemy_count=None, data_points=None, enemies=None):
+        if enemy_count is None:
+            enemy_count = self.global_enemy_count
+        if data_count is None:
+            data_count = self.global_data_count
+        if data_points is None:
+            data_points = self.global_data_points
+        if enemies is None:
+            enemies = self.global_enemies
         answer = {'distance': 25000, 'enemy_num': 0, 'dp_num': 0}
         for id_dp in range(data_count):
             for id_enemy in range(enemy_count):
@@ -91,8 +119,13 @@ class GameMechanicsHelper:
                     answer['dp_num'] = id_dp
         return answer
 
-    def find_the_closest_enemy_to_player(self, enemy_count=global_enemy_count, player=global_player,
-                                         enemies=global_enemies):
+    def find_the_closest_enemy_to_player(self, enemy_count=None, player=None, enemies=None):
+        if enemy_count is None:
+            enemy_count = self.global_enemy_count
+        if enemies is None:
+            enemies = self.global_enemies
+        if player is None:
+            player = self.global_player
 
         answer = {'distance': 25000, 'enemy_num': 0}
         for id_enemy in range(enemy_count):
@@ -220,6 +253,7 @@ while True:
             optimizer.enemies_begin = global_enemy_count
             optimizer.hp_total += enemy_life
         first_round = False
+    game_mechanics.update_globals(global_data_count, global_data_points, global_enemies, global_player, global_enemy_count)
 
     result = optimizer.main_optimizer_v1()
     if result == 0:
