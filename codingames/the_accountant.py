@@ -326,14 +326,25 @@ while True:
     game_mechanics.update_globals(global_data_count, global_data_points, global_enemies, global_player,
                                   global_enemy_count)
 
-    # result, shoot_id = optimizer.main_optimizer_v1()
-    result = optimizer.main_optimizer_v1()
+    # # result, shoot_id = optimizer.main_optimizer_v1()
+    # result = optimizer.main_optimizer_v1()
+    # if result == 0:
+    #     x_move_player, y_move_player = game_mechanics.move_to_objects_center()
+    #     print('MOVE %s %s' % (x_move_player, y_move_player))
+    # else:
+    #     optimizer.shots_current += 1
+    #     shooting_enemy_id = global_enemies[0]['id']
+    #     print('SHOOT %s' % shooting_enemy_id)
+    #     # print('SHOOT %s' % shoot_id)
+
+    # result, shoot_id = optimizer.main_optimizer_v2()
+    result, param = optimizer.main_optimizer_v2()
     if result == 0:
         x_move_player, y_move_player = game_mechanics.move_to_objects_center()
         print('MOVE %s %s' % (x_move_player, y_move_player))
     else:
         optimizer.shots_current += 1
-        shooting_enemy_id = global_enemies[0]['id']
+        shooting_enemy_id = param['id']
         print('SHOOT %s' % shooting_enemy_id)
         # print('SHOOT %s' % shoot_id)
 
