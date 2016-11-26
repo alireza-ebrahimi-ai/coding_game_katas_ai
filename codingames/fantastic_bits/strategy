@@ -1,0 +1,66 @@
+Usefull Notes:
+
+Spells
+Each player has a magic gauge.
+At the start of the game, the gauge is empty, but it increases by 1 point on every turn.
+A player can have up to 100 magic points at any given time.
+If a player has enough magic points, one of their wizards may use a spell instead of a MOVE or THROW command.
+A wizard may cast any of the following spells:
+
+OBLIVIATE id 	The wizard's team is invisible to the target bludger.
+Magic cost 	5
+Duration 	3
+Spell target 	Bludgers
+Details 	Both of your wizards can no longer be targeted by the Bludger id for the next 3 turns. The Bludger will stop chasing you if it was already targeting one of your wizards.
+
+PETRIFICUS id 	The target entity is immediately frozen to a standstill.
+Magic cost 	10
+Duration 	1
+Spell target 	Bludgers, Snaffles, Opponent wizards
+Details 	The speed vector of the entity id is set to 0 on the next turn.
+
+ACCIO id 	The target entity is pulled towards the wizard.
+Magic cost 	20
+Duration 	6
+Spell target 	Bludgers, Snaffles
+Details 	For the next 6 turns, a force pulls the entity id towards the wizard. This force decreases in proportion to the square of the distance.
+
+FLIPENDO id 	The target entity is pushed away from the wizard.
+Magic cost 	20
+Duration 	3
+Spell target 	Bludgers, Snaffles, Opponent wizards
+Details 	For the next 3 turns, a force pushes the entity id away from the wizard. This force decreases in proportion to the square of the distance.
+
+Expert Rules
+
+    To grabs a Snaffle, the distance between the center of the Snaffle and the wizard must be less than or equal to the wizard's radius - 1.
+    To score, the center of a Snaffle must go over the goal line.
+    When a wizard grabs a Snaffle, it is not subject to collisions or spells for the rest of the turn.
+    When a wizard grabs a Snaffle, it is immediately placed on the same position as the wizard and will adopt the same speed vector as the wizard.
+    If a wizard drops a Snaffle, it will keep the inertia provided by the wizard's speed vector.
+    When a wizard grabs a Snaffle, he cannot grab another until 3 turns have passed.
+    When a wizard casts a spell, the effect of the spell starts on the next turn.
+    All collisions are elastic. For technical reasons, a minimal impulse of 100 is applied to colliding entities if their speed is too low (doesn't apply when colliding with map edges).
+    The mass of the entites are as follows:
+    Wizard 	1
+    Snaffle 	0.5
+    Bludger 	8
+
+Each turn, the movement of entites is computed as followed:
+
+    Thrust: the normalized vector between the entity's position and destination is multiplied by the thrust power. The result is added to the current speed vector.
+    Spell power: the normalized vector between the entity's position and where the spell is directed towards is multiplied by the spell's power. The result is added to the current speed vector.
+    The order in which spells are computed in this order: Petrificus, Accio, Flipendo.
+    The power of Accio is:
+
+    MIN( 3000 / ( Dist / 1000 )2, 1000 )
+    The power of Flipendo is:
+
+    MIN( 6000 / ( Dist / 1000 )2, 1000 )
+    where Dist is the distance between the targeted entity and the wizard who cast the spell. If Dist is zero, the spell has no effect.
+    Movement: The speed vector is added to the position of the entity to compute its new position. If a collision occurs during the movement, the entities rebound off one another.
+    Friction: the speed vector is multiplied by a constant.
+    0.75 for wizards,
+    0.9 for Bludgers and
+    0.75 for Snaffles.
+    The speed's values and the position's values are rounded using the "round half away from zero" method. For example, 23.5 gets rounded to 24, and −23.5 gets rounded to −24
