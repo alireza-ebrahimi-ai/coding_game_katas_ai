@@ -1,0 +1,7 @@
+# IPython log file
+
+
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/home/kustikov/_soft/study_repos/Katas_solutions_python'])
+get_ipython().magic('logstart')
+get_ipython().magic('logstop')

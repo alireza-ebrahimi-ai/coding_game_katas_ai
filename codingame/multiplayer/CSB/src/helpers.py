@@ -2,7 +2,7 @@ import time
 
 
 class Constants:
-    MAP_SIZE = [16000, 900]
+    MAP_SIZE = [16000, 9000]
     CHECKPOINT_RADIUS = 600
     TIME_LIMIT_FIRST_TURN = 1000
     TIME_LIMIT = 150
