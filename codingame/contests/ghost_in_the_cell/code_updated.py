@@ -180,7 +180,7 @@ class Heuristics:
             return self.current_state
 
         # if I have been attacked?
-        if self.__calculate_under_attack_factories() > 0:
+        if len(self.__calculate_under_attack_factories()) > 0:
             self.current_state = 'DEFENSE'
             print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
             return self.current_state
@@ -202,10 +202,13 @@ class Heuristics:
     def _state_defense_active(self):
         pass
 
-    # state EXPANSION active
+    # state EXPANSION active ----
     def __get_best_home_factory(self):
         my_factories = self.__get_my_factories()
-        best_factory = my_factories[0]
+        if len(my_factories) > 0:
+            best_factory = my_factories[0]
+        else:
+            return 0
         for candidate in my_factories:
             if best_factory.arg_2 < candidate.arg_2:
                 best_factory = candidate
@@ -220,7 +223,9 @@ class Heuristics:
     def __get_the_target_factory(self, current_home):
         unit_balancer = {}
         for unit in self.game_units:
-            if (unit.id_ == current_home.id_) or (unit.type_ == 'TROOP') or (unit.arg_1 == 1):
+            if (unit.id_ == current_home.id_) or (unit.type_ == 'TROOP') or (unit.arg_1 == 1) or (unit.type_ == 'BOMB'):
+                continue
+            if unit.id_ > factory_count:
                 continue
 
             if weighted_graph.get_weight(current_home.id_, unit.id_) <= self.MAX_RANGE_FACTORY:
@@ -235,7 +240,9 @@ class Heuristics:
     def __get_another_target_factory(self, current_home, used_factories):
         unit_balancer = {}
         for unit in self.game_units:
-            if (unit.id_ == current_home.id_) or (unit.type_ == 'TROOP') or (unit.arg_1 == 1):
+            if (unit.id_ == current_home.id_) or (unit.type_ == 'TROOP') or (unit.arg_1 == 1) or (unit.type_ == 'BOMB'):
+                continue
+            if unit.id_ > factory_count:
                 continue
 
             if unit in used_factories:
@@ -258,8 +265,8 @@ class Heuristics:
         elif target.arg_1 == 0:
             capture_amount = target.arg_2 + 1 - troops
         if capture_amount <= home.arg_2:
-            return True, capture_amount
-        return False
+            return 1, capture_amount
+        return 0, 0
 
     def __if_troops_already_sent(self, home, target):
         deficit = [False, 0]
@@ -273,15 +280,30 @@ class Heuristics:
     def _state_expanse_active(self):
         # TODO add this for all factories
         home_factory = self.__get_best_home_factory()
+        # this is the end
+        if home_factory == 0:
+            return False
         best_target = self.__get_the_target_factory(home_factory)
+        print("LOG: best target id = %s" % best_target.id_, file=sys.stderr)
+
         if best_target != 0:
             # if troops have already sent to attack this factory
             troops_on_the_way = self.__if_troops_already_sent(home_factory, best_target)
 
+            print("LOG: troops on the way = %s" % troops_on_the_way, file=sys.stderr)
+            output = self.__if_capture_possible(home_factory, best_target, troops_on_the_way[1])
+            print("LOG: capture_possible [0] = ", output, file=sys.stderr)
+
             if self.__if_capture_possible(home_factory, best_target, troops_on_the_way[1])[0]:
                 capture_amount = self.__if_capture_possible(home_factory, best_target, troops_on_the_way[1])[1]
-                command = 'Move %s %s %s' % (home_factory.id_, best_target.id_, capture_amount)
-                self._add_command(command)
+                if capture_amount > 0:
+                    command = 'Move %s %s %s' % (home_factory.id_, best_target.id_, capture_amount)
+                    print("LOG: command = ", command, file=sys.stderr)
+                    self._add_command(command)
+                else:
+                    if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
+                        command = 'INC %s' % home_factory.id_
+                        self._add_command(command)
             else:
                 # can I make a donation to factory?
                 if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
@@ -301,14 +323,21 @@ class Heuristics:
 
                     if self.__if_capture_possible(next_factory, best_target, troops_on_the_way[1])[0]:
                         capture_amount = self.__if_capture_possible(next_factory, best_target, troops_on_the_way[1])[1]
-                        command = 'Move %s %s %s' % (next_factory.id_, best_target.id_, capture_amount)
-                        self._add_command(command)
+                        if capture_amount > 0:
+                            command = 'Move %s %s %s' % (home_factory.id_, best_target.id_, capture_amount)
+                            print("LOG: command = ", command, file=sys.stderr)
+                            self._add_command(command)
+                        else:
+                            if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
+                                command = 'INC %s' % home_factory.id_
+                                self._add_command(command)
                     else:
                         # can I make a donation to factory?
                         if next_factory.arg_2 > 10 and next_factory.arg_3 < 3:
                             command = 'INC %s' % next_factory.id_
                             self._add_command(command)
                     list_of_best_targets.append(best_target)
+    # state EXPANSION active ----
 
     def run(self):
         if self.current_state == 'WAIT':
@@ -325,9 +354,9 @@ class Heuristics:
         return self.print_command
 
     def _add_command(self, command):
-        if self.print_command == 0:
+        if self.print_command == '':
             self.print_command = command
-        if len(self.print_command) > 3:
+        elif len(self.print_command) > 3:
             self.print_command += ';'
             self.print_command += command
 
@@ -359,10 +388,11 @@ while True:
     bot.update()
     result_command = bot.run()
 
-    if result_command[len(result_command) - 1] == ';':
-        result_command = result_command[:len(result_command) - 1]
+    print("Command = %s" % result_command, file=sys.stderr)
 
     if result_command == '':
         print('Wait')
     else:
+        if result_command[len(result_command) - 1] == ';':
+            result_command = result_command[:len(result_command) - 1]
         print(result_command)
