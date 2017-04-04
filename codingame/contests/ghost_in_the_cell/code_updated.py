@@ -98,6 +98,7 @@ class Heuristics:
         'enemy_outpost': 1,
     }
     MAX_RANGE_FACTORY = 20
+    MIN_CYBORGS_TO_BOMB = 100
 
     # states
     states = ['WAIT', 'EXPANSE', 'DEFENSE', 'DOMINATE', 'UNDER_BOMB']
@@ -134,6 +135,13 @@ class Heuristics:
                 if factory.arg_1 == 0:
                     neutral += 1
         return neutral
+
+    def __get_enemy_factories(self):
+        enemy_factories = []
+        for factory in self.game_units:
+            if factory.type_ == 'FACTORY' and factory.arg_1 == -1:
+                enemy_factories.append(factory)
+        return enemy_factories
 
     def __get_my_factories(self):
         my_factories = []
@@ -190,9 +198,43 @@ class Heuristics:
         print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
         return self.current_state
 
-    # state DOMINATE active
+    """
+    state DOMINATION active ----
+    """
+    def __get_my_zero_factories(self):
+        zero = []
+        my_factories = self.__get_my_factories()
+        if my_factories:
+            for factory in my_factories:
+                if factory.arg_3 == 0:
+                    zero.append(factory)
+        return zero
+
+    def __get_max_factory_troops(self):
+        my_factories = self.__get_my_factories()
+        max_troops = 11
+        max_factory = my_factories
+        if my_factories:
+            for factory in my_factories:
+                if factory.arg_2 > max_troops:
+                    max_troops = factory.arg_2
+                    max_factory = factory
+        return max_factory
+
     def _state_dominate_active(self):
-        pass
+        # increase max income
+        # collect the fist and smash an enemy
+        my_zero_factories = self.__get_my_zero_factories()
+        if my_zero_factories:
+            my_max_base = self.__get_max_factory_troops()
+            for zero_factory in my_zero_factories:
+                print("LOG: troops to = %s for increase from %s" % (zero_factory.id_, my_max_base.id_), file=sys.stderr)
+                command = 'MOVE %s %s %s' % (my_max_base.id_, zero_factory.id_, 10)
+                self._add_command(command)
+
+    """
+    state DOMINATION active ----
+    """
 
     # state UNDER_BOMB active
     def _state_under_bomb_active(self):
@@ -202,7 +244,9 @@ class Heuristics:
     def _state_defense_active(self):
         pass
 
-    # state EXPANSION active ----
+    """
+    state EXPANSION active ----
+    """
     def __get_best_home_factory(self):
         my_factories = self.__get_my_factories()
         if len(my_factories) > 0:
@@ -277,12 +321,71 @@ class Heuristics:
                     deficit[1] += unit.arg_4
         return deficit
 
+    def __can_bomb_attack(self):
+        # if enemy has only 1 factory
+        # if enemy has factory with many cyborgs
+        # if my bomb exist
+        for unit_ in self.game_units:
+            if unit_.type_ == 'BOMB' and unit_.arg_1 == 1:
+                return False
+
+        enemy_factories = self.__get_enemy_factories()
+        if len(enemy_factories) == 1:
+            if enemy_factories[0].arg_2 > 17:
+                return True
+
+        if len(enemy_factories) > 1:
+            for enemy in enemy_factories:
+                if enemy.arg_2 >= self.MIN_CYBORGS_TO_BOMB:
+                    return True
+        return False
+
+    def __get_the_closest_home_base(self, target):
+        min_distance = 21
+        my_base = None
+        for pos in range(factory_count):
+            if self.game_units[pos].type_ == 'FACTORY' and self.game_units[pos].arg_1 == 1:
+                if weighted_graph.get_weight(self.game_units[pos].id_, target.id_) < min_distance:
+                    my_base = self.game_units[pos]
+                    min_distance = weighted_graph.get_weight(self.game_units[pos].id_, target.id_)
+        return my_base
+
+    def __bomb_attack(self):
+        enemy_factories = self.__get_enemy_factories()
+        if len(enemy_factories) == 1:
+            if enemy_factories[0].arg_2 > 17:
+                home_base = self.__get_the_closest_home_base(enemy_factories[0])
+                if home_base:
+                    print("LOG: BOMB id = %s from %s" % (enemy_factories[0].id_, home_base.id_), file=sys.stderr)
+                    command = 'BOMB %s %s' % (home_base.id_, enemy_factories[0].id_)
+                    self._add_command(command)
+                    return enemy_factories[0]
+
+        if len(enemy_factories) > 1:
+            for enemy in enemy_factories:
+                if enemy.arg_2 >= self.MIN_CYBORGS_TO_BOMB:
+                    home_base = self.__get_the_closest_home_base(enemy)
+                    if home_base:
+                        print("LOG: BOMB id = %s from %s" % (enemy.id_, home_base.id_), file=sys.stderr)
+                        command = ('BOMB %s %s' % home_base.id_, enemy.id_)
+                        self._add_command(command)
+                        return enemy
+        return None
+
     def _state_expanse_active(self):
-        # TODO add this for all factories
+        # Add BOMB attack
+        list_of_best_targets = []
+        if self.__can_bomb_attack():
+            bomb_attacked_factory = self.__bomb_attack()
+            if bomb_attacked_factory:
+                list_of_best_targets.append(bomb_attacked_factory)
+
         home_factory = self.__get_best_home_factory()
+
         # this is the end
         if home_factory == 0:
             return False
+
         best_target = self.__get_the_target_factory(home_factory)
         print("LOG: best target id = %s" % best_target.id_, file=sys.stderr)
 
@@ -306,14 +409,14 @@ class Heuristics:
                         self._add_command(command)
             else:
                 # can I make a donation to factory?
-                if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
+                if home_factory.arg_2 >= 10 and home_factory.arg_3 < 3:
                     command = 'INC %s' % home_factory.id_
                     self._add_command(command)
 
         # add activity for the other my factories:
         my_factories = self.__get_my_factories()
         my_factories.remove(home_factory)
-        list_of_best_targets = [best_target]
+        list_of_best_targets.append(best_target)
         if my_factories:
             for next_factory in my_factories:
                 best_target = self.__get_another_target_factory(next_factory, list_of_best_targets)
@@ -337,7 +440,9 @@ class Heuristics:
                             command = 'INC %s' % next_factory.id_
                             self._add_command(command)
                     list_of_best_targets.append(best_target)
-    # state EXPANSION active ----
+    """
+    state EXPANSION active ----
+    """
 
     def run(self):
         if self.current_state == 'WAIT':
