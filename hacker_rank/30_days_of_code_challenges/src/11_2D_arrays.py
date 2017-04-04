@@ -16,7 +16,6 @@ for row in range(0, 4):
                     + arr[1 + row][1 + column] + \
                     arr[2 + row][0 + column] + arr[2 + row][1 + column] + arr[2 + row][2 + column]
 
-
         if max_sum < sum_glass:
             max_sum = sum_glass
 
