@@ -93,12 +93,13 @@ class Heuristics:
     # @ tuning params
     score_params = {
         'production': 100,
-        'distance': -0.5,
-        'defence': -1,
-        'enemy_outpost': 1,
+        'distance': -20,
+        'defence': -10,
+        'enemy_outpost': -50,
     }
     MAX_RANGE_FACTORY = 20
-    MIN_CYBORGS_TO_BOMB = 100
+    MIN_CYBORGS_TO_BOMB = 20
+    MIN_CYBORGS_TO_BOMB_GO = 60
 
     # states
     states = ['WAIT', 'EXPANSE', 'DEFENSE', 'DOMINATE', 'UNDER_BOMB']
@@ -152,51 +153,19 @@ class Heuristics:
 
     def __calculate_under_attack_factories(self):
         my_factories = self.__get_my_factories()
-        attacks = {}
-        for factory in my_factories:
-            for unit in self.game_units:
-                if unit.id_ == 'TROOP' and unit.arg_1 == -1:
-                    if unit.arg_3 == factory.id_:
-                        if factory in attacks.keys():
-                            attacks[factory] += unit.arg_4
-                        else:
-                            attacks[factory] = unit.arg_4
-        return attacks
+        my_factory_ids = [x.id_ for x in my_factories]
+
+        for unit in self.game_units:
+            if unit.type_ == 'TROOP' and unit.arg_1 == -1:
+                if unit.arg_3 in my_factory_ids:
+                    return True
+        return False
 
     def __attacked_by_bomb(self):
         for unit in self.game_units:
             if unit.id_ == 'BOMB' and unit.arg_1 == -1:
                 return True
         return False
-
-    def update(self):
-        self.current_state = self.initial_state
-
-        # can I win by production and amount?
-        my_production, other_production = self.__get_all_production()
-        my_troops, other_troops = self.__get_all_troops()
-        neutral_factory = self.__get_neutral_factory()
-        if (my_production > other_production) and (my_troops > other_troops) and (neutral_factory == 0):
-            self.current_state = 'DOMINATE'
-            print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
-            return self.current_state
-
-        # if I have been attacked by BOMB?
-        if self.__attacked_by_bomb():
-            self.current_state = 'UNDER_BOMB'
-            print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
-            return self.current_state
-
-        # if I have been attacked?
-        if len(self.__calculate_under_attack_factories()) > 0:
-            self.current_state = 'DEFENSE'
-            print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
-            return self.current_state
-
-        # Expanse
-        self.current_state = 'EXPANSE'
-        print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
-        return self.current_state
 
     """
     state DOMINATION active ----
@@ -213,7 +182,7 @@ class Heuristics:
     def __get_max_factory_troops(self):
         my_factories = self.__get_my_factories()
         max_troops = 11
-        max_factory = my_factories
+        max_factory = my_factories[0]
         if my_factories:
             for factory in my_factories:
                 if factory.arg_2 > max_troops:
@@ -222,31 +191,164 @@ class Heuristics:
         return max_factory
 
     def _state_dominate_active(self):
-        # increase max income
-        # collect the fist and smash an enemy
+        # 0. check if can bomb attack
+        if self.__can_bomb_attack():
+            self.__bomb_attack()
+
+        # 1. increase max income
         my_zero_factories = self.__get_my_zero_factories()
+        print("LOG: got zero factories %s" % len(my_zero_factories), file=sys.stderr)
         if my_zero_factories:
             my_max_base = self.__get_max_factory_troops()
+            if my_max_base in my_zero_factories:
+                my_zero_factories.remove(my_max_base)
             for zero_factory in my_zero_factories:
-                print("LOG: troops to = %s for increase from %s" % (zero_factory.id_, my_max_base.id_), file=sys.stderr)
-                command = 'MOVE %s %s %s' % (my_max_base.id_, zero_factory.id_, 10)
+                print("LOG: zero factory amount %s" % zero_factory.arg_2, file=sys.stderr)
+                if zero_factory.arg_2 > 10:
+                    print("LOG: INC for increase from %s" % zero_factory.id_, file=sys.stderr)
+                    command = 'INC %s' % zero_factory.id_
+                    self._add_command(command)
+                else:
+                    print("LOG: troops to = %s for increase from %s" % (zero_factory.id_, my_max_base.id_), file=sys.stderr)
+                    command = 'MOVE %s %s %s' % (my_max_base.id_, zero_factory.id_, 10)
+                    self._add_command(command)
+
+        # 2. increase INC
+        my_factories = self.__get_my_factories()
+        for factory in my_factories:
+            if (factory.arg_2 > 10) and (factory.arg_3 in [1, 2]):
+                print("LOG: INC for increase from %s" % factory.id_, file=sys.stderr)
+                command = 'INC %s' % factory.id_
                 self._add_command(command)
+
+        # collect the fist and smash an enemy
+        enemy_fist = self.__get_enemy_factories()
+        if len(enemy_fist) > 0:
+            enemy_smash = enemy_fist[0]
+            if enemy_smash:
+                for factory in my_factories:
+                    if factory.arg_3 == 3 and factory.arg_2 > 20:
+                        print("LOG: Smash attack to %s" % enemy_smash.id_, file=sys.stderr)
+                        command = 'MOVE %s %s %s' % (factory.id_, enemy_smash.id_, 10)
+                        self._add_command(command)
 
     """
     state DOMINATION active ----
     """
 
-    # state UNDER_BOMB active
+    """
+    state UNDER_BOMB active
+    """
     def _state_under_bomb_active(self):
         pass
 
-    # state DEFENSE active
+    """
+    state UNDER_BOMB active
+    """
+
+    """
+    state DEFENSE active
+    """
+    def __get_factories_under_attack(self):
+        my_factories = self.__get_my_factories()
+        my_factory_ids = [x.id_ for x in my_factories]
+        need_defence = []
+        for unit in self.game_units:
+            if unit.type_ == 'TROOP' and unit.arg_1 == -1:
+                if unit.arg_3 in my_factory_ids:
+                    need_defence.append(unit.arg_3)
+        return list(set(need_defence))
+
+    def __get_factory_balance_tick(self, factory, tick):
+        balance = factory.arg_2
+        for unit in self.game_units:
+            if unit.type_ == 'TROOP' and unit.arg_1 == 1 and unit.arg_3 == factory.id_:
+                for tick_ in range(tick):
+                    if unit.arg_5 == tick_:
+                        balance += unit.arg_4
+        return balance
+
+    def __get_factory_future(self, factory):
+        troops_query = []
+        for unit in self.game_units:
+            if unit.type_ == 'TROOP' and unit.arg_1 == -1:
+                if unit.arg_3 == factory.id_:
+                    troops_query.append(unit)
+        for tick in range(21):
+            factory_balance = self.__get_factory_balance_tick(factory, tick)
+            for unit in troops_query:
+                if unit.arg_5 == tick:
+                    factory_balance -= unit.arg_4
+            if factory_balance <= 0:
+                return factory_balance, tick
+        return 0, 0
+
+    def __get_attack_timings(self, under_attack):
+        # {id: [troops_for_defence_need, amount_turn_lost]}
+        answer = {}
+        for attacked_factory in under_attack:
+            troops_for_defence_need, amount_turn_lost = self.__get_factory_future(attacked_factory)
+            answer[attacked_factory] = [troops_for_defence_need, amount_turn_lost]
+        return answer
+
+    def __help_candidates(self, target, distance_):
+        # TODO add check for possibility of removing troops from helpers
+        answer = []
+        my_factories = self.__get_my_factories()
+        if target in my_factories:
+            my_factories.remove(target)
+        for factory in my_factories:
+            if weighted_graph.get_weight(factory.id_, target.id_) <= distance_:
+                answer.append(factory)
+        return answer
+
     def _state_defense_active(self):
-        pass
+        # Add BOMB attack
+        if self.__can_bomb_attack():
+            self.__bomb_attack()
+
+        # get list of targets
+        factories_id_required_defence = self.__get_factories_under_attack()
+        factories_attacked = []
+        for id_ in factories_id_required_defence:
+            factories_attacked.append(self.game_units[id_])
+
+        # print('LOG: NEED defense: %s' % factories_attacked, file=sys.stderr)
+        if len(factories_id_required_defence) == 0:
+            self.current_state = 'EXPANSE'
+            self.run()
+            return False
+
+        # get amount of troops and timings {factory: [troops_for_defence_need, amount_turn_lost]}
+        defense_list = self.__get_attack_timings(factories_attacked)
+        # print('LOG: Def future: %s' % defense_list, file=sys.stderr)
+
+        # calculate defences and helps from neighbours
+        for defense_factory in factories_attacked:
+            if defense_list[defense_factory][0] == 0 and defense_list[defense_factory][1] == 0:
+                continue
+            if defense_list[defense_factory][1] == 1:
+                continue
+
+            candidates_for_help = self.__help_candidates(defense_factory, defense_list[defense_factory][1])
+            # print('LOG: Helpers: %s' % candidates_for_help, file=sys.stderr)
+
+            if len(candidates_for_help) > 0:
+                for helper in candidates_for_help:
+                    amount = defense_list[defense_factory][1] // len(candidates_for_help)
+                    command = 'Move %s %s %s' % (helper.id_, defense_factory.id_, amount)
+                    # print("LOG: command = ", command, file=sys.stderr)
+                    self._add_command(command)
+
+        self._state_expanse_active()
+    """
+    state DEFENSE active
+    """
 
     """
     state EXPANSION active ----
     """
+
     def __get_best_home_factory(self):
         my_factories = self.__get_my_factories()
         if len(my_factories) > 0:
@@ -276,6 +378,8 @@ class Heuristics:
                 unit_balancer[unit] = unit.arg_2 * self.score_params['defence']
                 unit_balancer[unit] += unit.arg_3 * self.score_params['production']
                 unit_balancer[unit] += weighted_graph.get_weight(current_home.id_, unit.id_) * self.score_params['distance']
+                if unit.arg_1 == -1:
+                    unit_balancer[unit] += self.score_params['enemy_outpost']
 
         if len(unit_balancer) == 0:
             return 0
@@ -338,7 +442,7 @@ class Heuristics:
             for enemy in enemy_factories:
                 if enemy.arg_2 >= self.MIN_CYBORGS_TO_BOMB:
                     return True
-        return False
+        return True
 
     def __get_the_closest_home_base(self, target):
         min_distance = 21
@@ -352,8 +456,9 @@ class Heuristics:
 
     def __bomb_attack(self):
         enemy_factories = self.__get_enemy_factories()
+        my_troops, other_troops = self.__get_all_troops()
         if len(enemy_factories) == 1:
-            if enemy_factories[0].arg_2 > 17:
+            if enemy_factories[0].arg_2 > 17 and enemy_factories[0].arg_3 > 1:
                 home_base = self.__get_the_closest_home_base(enemy_factories[0])
                 if home_base:
                     print("LOG: BOMB id = %s from %s" % (enemy_factories[0].id_, home_base.id_), file=sys.stderr)
@@ -363,11 +468,26 @@ class Heuristics:
 
         if len(enemy_factories) > 1:
             for enemy in enemy_factories:
-                if enemy.arg_2 >= self.MIN_CYBORGS_TO_BOMB:
+                if enemy.arg_2 >= self.MIN_CYBORGS_TO_BOMB and enemy.arg_3 >= 2:
                     home_base = self.__get_the_closest_home_base(enemy)
                     if home_base:
                         print("LOG: BOMB id = %s from %s" % (enemy.id_, home_base.id_), file=sys.stderr)
-                        command = ('BOMB %s %s' % home_base.id_, enemy.id_)
+                        command = 'BOMB %s %s' % (home_base.id_, enemy.id_)
+                        self._add_command(command)
+                        return enemy
+
+                if other_troops >= my_troops and enemy.arg_3 == 3:
+                    home_base = self.__get_the_closest_home_base(enemy)
+                    if home_base:
+                        print("LOG: BOMB id = %s from %s" % (enemy.id_, home_base.id_), file=sys.stderr)
+                        command = 'BOMB %s %s' % (home_base.id_, enemy.id_)
+                        self._add_command(command)
+                        return enemy
+                if other_troops < self.MIN_CYBORGS_TO_BOMB_GO and enemy.arg_3 == 3:
+                    home_base = self.__get_the_closest_home_base(enemy)
+                    if home_base:
+                        print("LOG: BOMB id = %s from %s" % (enemy.id_, home_base.id_), file=sys.stderr)
+                        command = 'BOMB %s %s' % (home_base.id_, enemy.id_)
                         self._add_command(command)
                         return enemy
         return None
@@ -387,7 +507,11 @@ class Heuristics:
             return False
 
         best_target = self.__get_the_target_factory(home_factory)
+        if best_target == 0:
+            return False
         print("LOG: best target id = %s" % best_target.id_, file=sys.stderr)
+
+        my_troops, other_troops = self.__get_all_troops()
 
         if best_target != 0:
             # if troops have already sent to attack this factory
@@ -404,12 +528,28 @@ class Heuristics:
                     print("LOG: command = ", command, file=sys.stderr)
                     self._add_command(command)
                 else:
-                    if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
+                    if home_factory.arg_2 > 10 and home_factory.arg_3 < 3 and my_troops > 100 and my_troops > other_troops:
                         command = 'INC %s' % home_factory.id_
                         self._add_command(command)
+                    # attack not the best target
+                    else:
+                        second_target = self.__get_another_target_factory(home_factory, [best_target])
+                        if second_target != 0:
+                            troops_on_the_way = self.__if_troops_already_sent(home_factory, second_target)
+
+                            print("LOG: troops on the way = %s" % troops_on_the_way, file=sys.stderr)
+                            output = self.__if_capture_possible(home_factory, second_target, troops_on_the_way[1])
+                            print("LOG: capture_possible [0] = ", output, file=sys.stderr)
+                            if self.__if_capture_possible(home_factory, second_target, troops_on_the_way[1])[0]:
+                                capture_amount = self.__if_capture_possible(home_factory, second_target, troops_on_the_way[1])[1]
+                                if capture_amount > 0:
+                                    command = 'Move %s %s %s' % (home_factory.id_, second_target.id_, capture_amount)
+                                    print("LOG: command = ", command, file=sys.stderr)
+                                    self._add_command(command)
+
             else:
                 # can I make a donation to factory?
-                if home_factory.arg_2 >= 10 and home_factory.arg_3 < 3:
+                if home_factory.arg_2 >= 10 and home_factory.arg_3 < 3 and my_troops > 100 and my_troops > other_troops:
                     command = 'INC %s' % home_factory.id_
                     self._add_command(command)
 
@@ -431,18 +571,48 @@ class Heuristics:
                             print("LOG: command = ", command, file=sys.stderr)
                             self._add_command(command)
                         else:
-                            if home_factory.arg_2 > 10 and home_factory.arg_3 < 3:
+                            if home_factory.arg_2 > 10 and home_factory.arg_3 < 3 and my_troops > 100 and my_troops > other_troops:
                                 command = 'INC %s' % home_factory.id_
                                 self._add_command(command)
                     else:
                         # can I make a donation to factory?
-                        if next_factory.arg_2 > 10 and next_factory.arg_3 < 3:
+                        if next_factory.arg_2 > 10 and next_factory.arg_3 < 3 and my_troops > 100 and my_troops > other_troops:
                             command = 'INC %s' % next_factory.id_
                             self._add_command(command)
                     list_of_best_targets.append(best_target)
     """
     state EXPANSION active ----
     """
+
+    def update(self):
+        self.current_state = self.initial_state
+
+        # can I win by production and amount?
+        my_production, other_production = self.__get_all_production()
+        my_troops, other_troops = self.__get_all_troops()
+        neutral_factory = self.__get_neutral_factory()
+        if (my_production > other_production) and (my_troops > other_troops) and (neutral_factory == 0):
+            self.current_state = 'DOMINATE'
+            print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
+            return self.current_state
+
+        # # if I have been attacked by BOMB?
+        # if self.__attacked_by_bomb():
+        #     self.current_state = 'UNDER_BOMB'
+        #     print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
+        #     return self.current_state
+
+        # if I have been attacked?
+        print('LOG: Factories under Attack: %s' % self.__calculate_under_attack_factories(), file=sys.stderr)
+        if self.__calculate_under_attack_factories():
+            self.current_state = 'DEFENSE'
+            print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
+            return self.current_state
+
+        # Expanse
+        self.current_state = 'EXPANSE'
+        print('LOG: Activate state: %s' % self.current_state, file=sys.stderr)
+        return self.current_state
 
     def run(self):
         if self.current_state == 'WAIT':
@@ -468,8 +638,6 @@ class Heuristics:
 
 factory_count = int(input())
 link_count = int(input())
-# print("Factory count = %s" % factory_count, file=sys.stderr)
-# print("Link count = %s" % link_count, file=sys.stderr)
 
 weighted_graph = IndirectedWeightedGraph()
 for i in range(link_count):
