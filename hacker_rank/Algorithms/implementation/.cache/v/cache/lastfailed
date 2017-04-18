@@ -1,5 +1,0 @@
-{
-  "test/test_bigger_is_greater.py::test_collect_all": true,
-  "test/test_bigger_is_greater.py::test_longest_suffix": true,
-  "test/test_bigger_is_greater.py::test_swap": true
-}
