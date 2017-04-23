@@ -61,16 +61,15 @@ class Bot:
         return barrel_best
 
     def get_the_fire_target(self, ship_):
-        the_min_dist = 10000
         ship_best = None
         for ship_iter in self.ships:
             if ship_iter.arg_4 == 1:
                 continue
             dist = self.get_distance(ship_, ship_iter)
-            if dist < the_min_dist:
-                the_min_dist = dist
+            if dist < 10:
                 ship_best = ship_iter
-        # print('DEBUG: best distance: ', the_min_dist, file=sys.stderr)
+                print('DEBUG: distance to enemy: %s target: %s %s' % (dist, ship_iter.r, ship_iter.q), file=sys.stderr)
+                return ship_best
         return ship_best
 
 while True:
@@ -109,14 +108,9 @@ while True:
         fire_target = my_bot.get_the_fire_target(my_ship)
 
         if best_barrel:
-            # move to best closest barrel
             print('MOVE %s %s' % (best_barrel.r, best_barrel.q))
-            # fire if ship can
-            # if fire_target:
-            #     print('FIRE %s %s' % (fire_target.r, fire_target.q))
-        else:
             if fire_target:
                 print('FIRE %s %s' % (fire_target.r, fire_target.q))
-            else:
-                print('WAIT')
+        else:
+            print('WAIT')
     print('Debug: move spent: ', round(time.time() - start_move_timer, 4), file=sys.stderr)
