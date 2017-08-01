@@ -1,4 +1,4 @@
-from hacker_rank.Algorithms.implementation.src.bigger_is_greater import Permutation
+from hackerrank.Algorithms.implementation.src.bigger_is_greater import Permutation
 import pytest
 
 task = Permutation()
