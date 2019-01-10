@@ -1,9 +1,0 @@
-{
-  "codewars/tests/test_credit_card_issuer_checking.py": true,
-  "codewars/tests/test_dna_sequence_tester.py": true,
-  "codewars/tests/test_matrix_determinant.py": true,
-  "codewars/tests/test_rna_to_protein_sequence_translation.py": true,
-  "codingame/multiplayer/CSB/test/test_emulation.py": true,
-  "hackerrank/Algorithms/implementation/test/test_bigger_is_greater.py": true,
-  "leetcode/test/test_001_two_sum.py": true
-}

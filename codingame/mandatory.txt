@@ -1,8 +1,0 @@
-1. Simulator
-
-2. Algorithms:
-    - minimax
-    - alpha_beta pruning
-    - monte-carlo tree search
-    - genetic
-    - beam search

@@ -5,50 +5,15 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-codewars/.idea/workspace.xml
-codewars/.idea/tasks.xml
-codewars/.idea/dictionaries
-codewars/.idea/vcs.xml
-codewars/.idea/jsLibraryMappings.xml
-
-# Sensitive or high-churn files:
-codewars/.idea/dataSources.ids
-codewars/.idea/dataSources.xml
-codewars/.idea/dataSources.local.xml
-codewars/.idea/sqlDataSources.xml
-codewars/.idea/dynamic.xml
-codewars/.idea/uiDesigner.xml
-
-# Gradle:
-codewars/.idea/gradle.xml
-codewars/.idea/libraries
-
-# Mongo Explorer plugin:
-codewars/.idea/mongoSettings.xml
+.idea
 
 ## File-based project format:
 *.iws
 
 ## Plugin-specific files:
+.cache
 
 # IntelliJ
 /out/
 
-# mpeltonen/sbt-idea plugin
-codewars/.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-Будет удалено hacker_rank/Data_structures/
-Будет удалено hacker_rank/Databases/
-Будет удалено hacker_rank/Functional_programming/
-Будет удалено hacker_rank/Mathematics/
-Будет удалено hacker_rank/Python/
-Будет удалено hacker_rank/Regex/
-Будет удалено hacker_rank/Sql/
+.__pycache__
